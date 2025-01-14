@@ -19,6 +19,7 @@ navEl.addEventListener("click", (e) => {
 			btnStyleToggle("aboutBtn");
 			updateDom(about);
 		}
+
 		document.activeElement.blur();
 });
 
@@ -54,3 +55,9 @@ logoEl.className = "sidebarLogo"
 const sidebar = document.querySelector(".sidebar")
 sidebar.insertBefore(logoEl, sidebar.firstChild);
 
+	
+document.querySelector(".sidebarLogo").
+	addEventListener("click", (e) => {
+				btnStyleToggle("homeBtn");
+				updateDom(home);
+		});
