@@ -41,5 +41,6 @@ updateDom(home);
 const logoEl = document.createElement("img");
 logoEl.setAttribute("src", logo)
 logoEl.className = "sidebarLogo"
-document.querySelector(".sidebar").appendChild(logoEl);
+const sidebar = document.querySelector(".sidebar")
+sidebar.insertBefore(logoEl, sidebar.firstChild);
 
