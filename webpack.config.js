@@ -6,7 +6,7 @@ modeule.export = {
 	output: {
 		filename: "main.js",
 		path: path.resolve(__dirname, "dist"),
-		clean: true;
+		clean: true,
 	},
 	devtool: "eval-source-map",
 	devServer: {
