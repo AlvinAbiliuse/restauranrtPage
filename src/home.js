@@ -7,7 +7,5 @@ function page() {
 		return heroPage;
 }
 
-let pageEl = new page();
-
-export default pageEl;
+export default page();
 

@@ -6,4 +6,19 @@
 }
 
 
+body {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+
+
+.sidebar{
+	padding: 20px;
+}
+
+.sidebarLogo {
+	width: 100px;
+}
+
 
