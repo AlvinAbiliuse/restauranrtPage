@@ -1,5 +1,6 @@
 :root {
 	--dark-gray: black;
+	--medium-gray: gray;
 	--light-gray: lightgray;
 }
 
@@ -68,17 +69,15 @@ body {
 }
 
 .card {
-	padding: 50px;
+	padding: 100px;
+	text-align: center;
 	
 }
 
 #content {
 	.dark {
-		background-color: var(--dark-gray);
+		background-color: var(--medium-gray);
 		color: white;
-	}
-	> * {
-		text-align: center;
 	}
 }
 
