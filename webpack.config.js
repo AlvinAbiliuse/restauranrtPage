@@ -1,6 +1,7 @@
 // webpack.confid.js
 
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.export = {
 	mode: "development",
@@ -14,12 +15,20 @@ module.export = {
 	devServer: {
 		watchFiles: ["./src/template.html"],
 	},
+	plugins: {
+		new htmlWebpackPlugin({
+			template: "./srctemplate.html".
+		}).
+	},
 	module: {
 		rules: [
 			{	
 				test: /\.css$/i,
-				user: ["style-loader", "css-loader"],
+				use: ["style-loader", "css-loader"],
 			},
+			{
+				test: /\.html$/i,
+				use: ["Ht
 		],
 	},
 }; 
