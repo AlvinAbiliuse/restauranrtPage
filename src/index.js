@@ -10,7 +10,7 @@ let contentEl = document.querySelector("#content");
 
 navEl.addEventListener("click", (e) => {
 		if (e.target.classList.contains("homeBtn")) {
-			btnStyleToggle("homebtn");
+			btnStyleToggle("homeBtn");
 			updateDom(home);
 		} else if (e.target.classList.contains("menuBtn")) {
 			btnStyleToggle("menuBtn");
@@ -22,7 +22,8 @@ navEl.addEventListener("click", (e) => {
 		document.activeElement.blur();
 });
 
-// to toggle css to change button when active *not complete*
+
+// changes classname of selected button to make css changes
 let btnStyleToggle = (name) => {
 	let navArr = navEl.querySelectorAll("button");
 	let classArr = [];
@@ -45,6 +46,7 @@ let updateDom = (page) => {
 };
 
 updateDom(menu);
+btnStyleToggle("menuBtn");
 
 const logoEl = document.createElement("img");
 logoEl.setAttribute("src", logo)
