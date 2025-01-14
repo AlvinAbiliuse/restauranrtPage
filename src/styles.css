@@ -9,6 +9,7 @@
 	padding: 0;
 	line-height: 1.2em;
 	box-sizing: border-box;
+	outline: 1px solid red;
 }
 
 html {
@@ -23,13 +24,15 @@ body {
 }
 
 
-
 .sidebar {
 	display: flex;
 	padding-top: 50px;
 	flex-direction: column;
 	align-items: center;
 	height: 100vh;
+	width: 100%;
+	position: sticky;
+	top: 0;
 	justify-content: flex-start;
 	gap: 40px;
 	background-color: var(--dark-gray);
@@ -39,6 +42,7 @@ body {
 .sidebar nav {
 	display: flex;
 	flex-direction: column;
+	position: sticky;
 	width: 100%;
 	gap: 20px;
 	button {
