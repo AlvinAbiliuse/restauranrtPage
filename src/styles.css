@@ -67,12 +67,18 @@ body {
 	border: none;
 }
 
+.card {
+	padding: 50px;
+	
+}
 
 #content {
-	padding: 50px;
 	.dark {
 		background-color: var(--dark-gray);
 		color: white;
+	}
+	> * {
+		text-align: center;
 	}
 }
 
