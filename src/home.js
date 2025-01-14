@@ -4,6 +4,8 @@ import food2 from "./images/food2.jpg";
 import food3 from "./images/food3.jpg";
 import food4 from "./images/food4.jpg";
 
+import "./homePageStyles.css";
+
 function page() {
 		let mainContent = document.createElement("div");
 
