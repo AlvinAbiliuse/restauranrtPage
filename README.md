@@ -1,3 +1,3 @@
-Restaruant project and practice using webpack
+# Restaruant project and practice using webpack
 
 view live version: **to be updated**
