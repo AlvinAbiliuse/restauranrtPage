@@ -1,6 +1,7 @@
 import home from "./home.js"
 import menu from "./menu.js"
 import about from "./about.js"
+import "./styles.css"
 
 let navEl = document.querySelector("header nav");
 let contentEl = document.querySelector("#content");
