@@ -16,30 +16,30 @@ function page() {
 		el.setAttribute("src", image);
 		el.className = "chefImage";
 		heroPage.appendChild(el);
-		el = document.createElement("p");
-		el.textContent = "welcome to \"Sushi Restaurant\"";
-		heroPage.appendChild(el);
 	
 		mainContent.appendChild(heroPage);
 
-
-		let secondCard = document.createElement("div");
 		el = document.createElement("div");
-		let subEl = document.createElement("div");
+		el.className = "card secondCard";
 		
-		let imgEl, subP, i;
+		let subEl, imgEl, subP, i;
 		for (i=0; i < 4; i++) {
+			subEl = document.createElement("div");
 			subEl.className = "foodCard";
 			imgEl = document.createElement("img");
 			imgEl.setAttribute("src", [food1, food2, food3, food4][i]);
 			subEl.appendChild(imgEl);
-			subP = document.createElement("p");
-			subP.textContent = `Food ${i}`;
-			subEl.appendChild(subP);
 			el.appendChild(subEl);
 		}
-		mainContent.append(el);
-	
+		mainContent.appendChild(el);
+
+		let footer = document.createElement("div");
+		footer.className = "card dark footer";
+		let text = document.createElement("p");
+		text.textContent = "tis but a footer";
+		footer.appendChild(text);
+		mainContent.appendChild(footer);
+		
 		return mainContent;
 }
 
