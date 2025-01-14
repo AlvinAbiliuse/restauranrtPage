@@ -14,6 +14,7 @@ function menuPage() {
 	card.appendChild(el);
 	mainPage.appendChild(card);
 	card = document.createElement("div");
+	card.className = "card";
 	let subEl, subElInfo;
 	for (let i=0; i < 4; i++) {
 		el = document.createElement("div");
@@ -23,7 +24,7 @@ function menuPage() {
 		imgEl.setAttribute("src", 
 			[food1, food2, food3, food4][i]);
 		subEl.appendChild(imgEl);
-		el.appendChild(subEl);
+		card.appendChild(subEl);
 
 		subEl = document.createElement("div");
 		subEl.className = "info";
@@ -40,10 +41,16 @@ function menuPage() {
 		subElInfo.className = "price";
 		subEl.appendChild(subElInfo);
 
-		el.appendChild(subEl);
+		card.appendChild(subEl);
 			
-		mainPage.appendChild(el);
+		mainPage.appendChild(card);
 	}
+   	let footer = document.createElement("div");
+    footer.className = "card dark footer";
+    let text = document.createElement("p");
+    text.textContent = "tis but a footer";
+    footer.appendChild(text);
+    mainPage.appendChild(footer);
 	return mainPage;
 }		
 
