@@ -1,6 +1,8 @@
 import home from "./home.js"
 import menu from "./menu.js"
 import about from "./about.js"
+import "./styles.css"
+
 const logo = require("./images/logo.svg");
 
 let navEl = document.querySelector(".sidebar nav");
@@ -14,6 +16,7 @@ navEl.addEventListener("click", (e) => {
 		} else if (e.target.classList.contains("aboutBtn")) {
 			updateDom(about);
 		}
+		document.activeElement.blur();
 });
 
 // to toggle css to change button when active *not complete*
