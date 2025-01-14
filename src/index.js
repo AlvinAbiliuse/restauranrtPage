@@ -10,10 +10,13 @@ let contentEl = document.querySelector("#content");
 
 navEl.addEventListener("click", (e) => {
 		if (e.target.classList.contains("homeBtn")) {
+			btnStyleToggle("homebtn");
 			updateDom(home);
 		} else if (e.target.classList.contains("menuBtn")) {
+			btnStyleToggle("menuBtn");
 			updateDom(menu);
 		} else if (e.target.classList.contains("aboutBtn")) {
+			btnStyleToggle("aboutBtn");
 			updateDom(about);
 		}
 		document.activeElement.blur();
@@ -23,10 +26,16 @@ navEl.addEventListener("click", (e) => {
 let btnStyleToggle = (name) => {
 	let navArr = navEl.querySelectorAll("button");
 	let classArr = [];
-	for (let i=0; i < navArr.length; i++) {
-		classArr.push(navArr[i].className);
-	}	
-	console.log(classArr);
+	
+	const list = ["homeBtn", "menuBtn", "aboutBtn"];
+	for (let i=0; i < list.length; i++) {
+		if (list[i] == name) {
+			document.querySelector("." + list[i]).className = 
+				name + " current";
+		} else {
+			document.querySelector("." + list[i]).className = list[i];
+		}
+	}
 }
 
 let updateDom = (page) => {
@@ -35,7 +44,7 @@ let updateDom = (page) => {
 
 };
 
-updateDom(home);
+updateDom(menu);
 
 const logoEl = document.createElement("img");
 logoEl.setAttribute("src", logo)
