@@ -8,14 +8,11 @@ let navEl = document.querySelector(".sidebar nav");
 let contentEl = document.querySelector("#content");
 
 navEl.addEventListener("click", (e) => {
-		if (e.target.className == "homeBtn") {
-			btnStyleToggle();			
+		if (e.target.classList.contains("homeBtn")) {
 			updateDom(home);
-		} else if (e.target.className == "menuBtn") {
-			btnStyleToggle();			
+		} else if (e.target.classList.contains("menuBtn")) {
 			updateDom(menu);
-		} else if (e.target.className == "aboutBtn") {
-			btnStyleToggle();			
+		} else if (e.target.classList.contains("aboutBtn")) {
 			updateDom(about);
 		}
 });
@@ -31,7 +28,7 @@ let btnStyleToggle = (name) => {
 }
 
 let updateDom = (page) => {
-	contentEl.innerHTML = ""
+	contentEl.innerHTML = "";
 	contentEl.appendChild(page);
 
 };
