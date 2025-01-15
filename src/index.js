@@ -10,12 +10,15 @@ let contentEl = document.querySelector("#content");
 
 navEl.addEventListener("click", (e) => {
 		if (e.target.classList.contains("homeBtn")) {
+			window.scroll(0, 0);
 			btnStyleToggle("homeBtn");
 			updateDom(home);
 		} else if (e.target.classList.contains("menuBtn")) {
+			window.scroll(0, 0);
 			btnStyleToggle("menuBtn");
 			updateDom(menu);
 		} else if (e.target.classList.contains("aboutBtn")) {
+			window.scroll(0, 0);
 			btnStyleToggle("aboutBtn");
 			updateDom(about);
 		}
@@ -58,6 +61,7 @@ sidebar.insertBefore(logoEl, sidebar.firstChild);
 	
 document.querySelector(".sidebarLogo").
 	addEventListener("click", (e) => {
+				window.scroll(0, 0);
 				btnStyleToggle("homeBtn");
 				updateDom(home);
 		});
