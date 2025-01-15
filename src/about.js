@@ -6,6 +6,7 @@ import image4 from "./images/about4.jpg"
 
 function aboutPage() {
 	let mainContent = document.createElement("div");
+	mainContent.className = "about";	
 	
 	let el = document.createElement("div");
 	el.className = "card dark";

@@ -1,10 +1,17 @@
-.card {
+.about .card{
 	padding: 80px;
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-content: center;
 	align-items: center;
+	font-size: 30px;
+	img {
+		width: 500px;
+		height: 350px;
+		object-fit: cover;
+		border-radius: 20px;
+	}
 }
 	
 
@@ -15,7 +22,10 @@
 	}
 }
 
-.footer {
+.about .footer {
+	padding: 20px;
 	display: block;
+	font-size: 20px;
 }
+
 
