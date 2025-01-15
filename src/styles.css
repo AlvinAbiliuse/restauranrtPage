@@ -84,3 +84,7 @@ body {
 .footer {
 	padding: 20px;
 }
+
+a:visited {
+	color: purple;
+}
