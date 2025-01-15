@@ -46,8 +46,8 @@ let updateDom = (page) => {
 
 };
 
-updateDom(menu);
-btnStyleToggle("menuBtn");
+updateDom(about);
+btnStyleToggle("aboutBtn");
 
 const logoEl = document.createElement("img");
 logoEl.setAttribute("src", logo)

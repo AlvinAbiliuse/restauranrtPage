@@ -1,8 +1,12 @@
 .card {
 	padding: 80px;
 	text-align: center;
-	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
 }
+	
 
 #content {
 	.dark {
@@ -11,27 +15,7 @@
 	}
 }
 
-.chefImage {
-	width: 250px;
-	margin-top: 40px;
-	border-radius: 10px;
-}
-
-.secondCard {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	div {
-		margin: 40px;
-		
-	}
-	img {
-		width: 300px;
-		height: 300px;
-		object-fit: cover;
-		border-radius: 15px;
-	}
-	img:hover {
-		transform: scale(1.05);
-	}
+.footer {
+	display: block;
 }
 
